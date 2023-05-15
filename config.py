@@ -20,7 +20,7 @@ available_setting = {
     "use_azure_chatgpt": False,  # 是否使用azure的chatgpt
     "azure_deployment_id": "",  # azure 模型部署名称
     # Bot触发配置
-    "single_chat_prefix": ["bot", "@bot"],  # 私聊时文本需要包含该前缀才能触发机器人回复
+    "single_chat_prefix": [""],  # 私聊时文本需要包含该前缀才能触发机器人回复
     "single_chat_reply_prefix": "[bot] ",  # 私聊时自动回复的前缀，用于区分真人
     "group_chat_prefix": ["@bot"],  # 群聊时包含该前缀则会触发机器人回复
     "group_chat_reply_prefix": "",  # 群聊时自动回复的前缀
@@ -48,7 +48,7 @@ available_setting = {
     "request_timeout": 60,  # chatgpt请求超时时间，openai接口默认设置为600，对于难问题一般需要较长时间
     "timeout": 120,  # chatgpt重试超时时间，在这个时间内，将会自动重试
     # 语音设置
-    "speech_recognition": False,  # 是否开启语音识别
+    "speech_recognition": true,  # 是否开启语音识别
     "group_speech_recognition": False,  # 是否开启群组语音识别
     "voice_reply_voice": False,  # 是否使用语音回复语音，需要设置对应语音合成引擎的api key
     "always_reply_voice": False,  # 是否一直使用语音回复
